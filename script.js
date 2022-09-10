@@ -14,15 +14,12 @@ function loadImg(event){
 }
 
 function pdfDown(){
-  // console.log(newImg);
-  // const doc = new jsPDF();
-  // doc.addImage(newImg, 1,1)
-  // doc.save('imgintoPdf.pdf');
+
 
   const doc = new jsPDF();
 
-  doc.setFontSize(40);
-  doc.text("www.abhirk.me", 35, 25);
+  // doc.setFontSize(40);
+  // doc.text("www.abhirk.me", 35, 25);
   doc.addImage(newImg, 15, 40, 180, 180);
 
   doc.save('imgintoPdf.pdf');

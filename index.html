@@ -9,16 +9,27 @@
 </head>
 <body>
   <div class="container">
-    <h1>Image to Pdf</h1>
-    <div class="upload-img">
+    <div class="header">
+      <h1>Image into Pdf</h1>
+    </div>
+    <!-- <div class="upload-img">
+      
       <input type="file" name="" onchange="loadImg(event)" accept=".png, .jpg, .jpeg">
       upload Image
+    </div> -->
+
+    <div class="file-input">
+      <input type="file" id="file" class="file" onchange="loadImg(event)" accept=".png, .jpg, .jpeg">
+      <label for="file">
+        Select file
+        <p class="file-name"></p>
+      </label>
     </div>
     <img id="showImg" src="img/img.jpg" >
     <button class="bn30" onclick="pdfDown()">Image to Pdf</button>
   </div>
  
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> -->
+  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha512-cLuyDTDg9CSseBSFWNd4wkEaZ0TBEpclX0zD3D6HjI19pO39M58AgJ1SjHp6c7ZOp0/OCRcC2BCvvySU9KJaGw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
