@@ -12,14 +12,11 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
-  background:linear-gradient(120deg,#4abdeb,#3c57d2);
+  padding: 0;
+  background: rgb(238,174,202);
+background: linear-gradient(315deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
  
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-
+  
 }
 
 .header{
@@ -159,4 +156,19 @@ input:focus + label {
 input:focus + label {
   outline: 1px solid #000;
   outline: -webkit-focus-ring-color auto 2px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.card-text{
+  margin-bottom: 3rem;
+}
+
+.navbar-brand{
+  font-weight: bolder;
+  
 }
